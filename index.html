@@ -1,181 +1,44 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-            <meta charset="utf-8">
-        
-            <title>Page Title </title>
-        <link href="<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles.css">
-        </head>
-    
-    <body>
-    <div class="container">
-        <div class="nav-wrapper">
-            <div class="left-side">
-                <div class="nav-link-wrapper">
-       <a href="index.html">About</a>
-                
-        <a href="about.html">Projects</a>
-           
-               </div>
-               </div>
-               
-            <div class="right-side">
-             <div class="brand">
-            
-                 <div>TISHA CHAWLA</div>
-    
-                </div>
-            </div>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
+    <title>calcultor</title>
+
+  
+  </head>
+  <body>
+
+    <div class="container" id="div1">
+      <h1 style="color:white;">CGPA CALCULATOR</h1>
+      <h2>Enter the number of subjects:</h2>
+      <input type="number" id='Num subjects'name="enter">
+      <p></p>
     </div>
-        <div class="content-wrapper">
-            <div class="portfolio-items-wrapper">
-                <div class="portfolio-item-wrapper">
-                    <div class="portfolio-img-background" style="background-img:url(IMg/eight.jpg)">
-                    <div class="img-text-wrapper">
-                        <div class="logo-wrapper">
-                            <img src="IMg/five.jpg">
-                            
-                        </div>
-                        <div class="subtitle"></div>
-                        </div>
-                    
-                    </div>
-                </div>
-            <div class="portfolio-item-wrapper">
-                    <div class="portfolio-img-background" style="background-img:url(IMg/eight.jpg)">
-                    <div class="img-text-wrapper">
-                        <div class="logo-wrapper">
-                            <img src="IMg/one.jpg">
-                            
-                        </div>
-                        <div class="subtitle"></div>
-                        </div>
-                    
-                    </div>
-                </div>
-                <div class="portfolio-item-wrapper">
-                    <div class="portfolio-img-background" style="background-img:url(IMg/eight.jpg)">
-                    <div class="img-text-wrapper">
-                        <div class="logo-wrapper">
-                            <img src="IMg/two.jpg">
-                            
-                        </div>
-                        <div class="subtitle"></div>
-                        </div>
-                    
-                    </div>
-                </div>
-                <div class="portfolio-item-wrapper">
-                    <div class="portfolio-img-background" style="background-img:url(IMg/eight.jpg)">
-                    <div class="img-text-wrapper">
-                        <div class="logo-wrapper">
-                            <img src="IMg/three.jpg">
-                            
-                        </div>
-                        <div class="subtitle"></div>
-                        </div>
-                    
-                    </div>
-                </div>
-                <div class="portfolio-item-wrapper">
-                    <div class="portfolio-img-background" style="background-img:url(IMg/eight.jpg)">
-                    <div class="img-text-wrapper">
-                        <div class="logo-wrapper">
-                            <img src="IMg/four.jpg">
-                            
-                        </div>
-                        <div class="subtitle"></div>
-                        </div>
-                    
-                    </div>
-                </div>
-                <div class="portfolio-item-wrapper">
-                    <div class="portfolio-img-background" style="background-img:url(IMg/eight.jpg)">
-                    <div class="img-text-wrapper">
-                        <div class="logo-wrapper">
-                            <img src="IMg/six.jpg">
-                            
-                        </div>
-                        <div class="subtitle"></div>
-                        </div>
-                    
-                    </div>
-                </div>
-                <div class="portfolio-item-wrapper">
-                    <div class="portfolio-img-background" style="background-img:url(IMg/eight.jpg)">
-                    <div class="img-text-wrapper">
-                        <div class="logo-wrapper">
-                            <img src="IMg/seven.jpg">
-                            
-                        </div>
-                        <div class="subtitle"></div>
-                        </div>
-                    
-                    </div>
-                </div>
-                <div class="portfolio-item-wrapper">
-                    <div class="portfolio-img-background" style="background-img:url(IMg/eight.jpg)">
-                    <div class="img-text-wrapper">
-                        <div class="logo-wrapper">
-                            <img src="IMg/nine.jpg">
-                            
-                        </div>
-                        <div class="subtitle"></div>
-                        </div>
-                    
-                    </div>
-                </div>
-                <div class="portfolio-item-wrapper">
-                    <div class="portfolio-img-background" style="background-img:url(IMg/eight.jpg)">
-                    <div class="img-text-wrapper">
-                        <div class="logo-wrapper">
-                            <img src="IMg/nine.jpg">
-                            
-                        </div>
-                        <div class="subtitle"></div>
-                        </div>
-                    
-                    </div>
-                </div>
-            </div>
-        
-        </div>
-        </div>
-        </body>
-        <script>
-        
-        
-        const portfolioItems=document.querySelectorAll('.portfolio-item-wrapper')
-        
-        portfolioItems.forEach(portfolioItem=>{
-            portfolioItem.addEventListener("mouseover",()=>{
-            
-                portfolioItem.childNodes[1].classList.add('img-darken');
-               
-                
-            })
-              portfolioItem.addEventListener("mouseout",()=>{
-              
-                portfolioItem.childNodes[1].classList.remove('img-darken');
-               
-                
-            })
-        })
-        
-        
-        
-        
-        </script>
-    </html>
 
+    <div class="container" id="div2">
+      <!-- Create 2 buttons. One for adding the fields and one for doing tha calculation -->
+      <button type="button" name="button" onClick='NewField()'><h3>ADDITION OF MARKS</h3></button>
+      <br>
+    </div>
 
+    <div id='texts'>
+        <br>
+      <!-- This is where the new input fileds will be created -->
+      
+    </div>
+    <div class="container" id="div3">
+        <br>
+    <button type="button" name="button" onClick='gpa_calculate()'><h3>CALCULATION OF CGPA</h3></button>
+    </div>
+    <div id='Final mark' id="div4">
+      <!-- This is where the code for the grade to be displayed will be added -->
+        <h1 id='output'></h1>
+      <!-- This element is a dummy one to be deleted on the first run of the script. In subssequent runs the displayed grade will be deleted -->
+    </div>
+    
+    <script src="index.js" charset="utf-8"></script>
+    
 
-
-
-
-
-
-
-</DOCTYPE>
+  </body>
+</html>

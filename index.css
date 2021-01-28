@@ -1,0 +1,36 @@
+body{
+    background-color:plum;
+    text-emphasis: center;
+}
+
+    #div1
+    {  padding-top: 80px;
+        
+        text-align: center;
+        color: black;
+        font-size: larger;
+        font-style:italic;
+        font-weight: 500;
+        align-content: center;
+
+        
+    }
+#div4
+{
+    font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center
+    ;
+}
+#div2
+{
+    text-align: center;
+}
+#div3
+{
+    text-align: center;
+}
+#texts
+{
+    text-align: center;
+}
